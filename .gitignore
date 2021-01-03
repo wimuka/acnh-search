@@ -1,6 +1,6 @@
 node_modules
 .history
-config
+config/default.json
 package-lock.json
 .env.local
 

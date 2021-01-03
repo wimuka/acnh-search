@@ -29,7 +29,7 @@ import {
 } from '../types';
 
 //eslint-disable-next-line
-export const regexSymb = /[.*()\\+=\[\]]/;
+export const regexSymb = /[\[\]\?\*\+\|\{\}\\\(\)\@\.\n\r]/;
 
 //Setup initial state
 export function VillagerState(props) {
@@ -108,7 +108,7 @@ export function VillagerState(props) {
 
   const getVillagers = async id => {
     setLoading();
-    const res = await fetch('api/villagers');
+    const res = await fetch('/api/villagers');
     const data = await res.json();
     dispatch({
       type: GET_VILLAGERS,
@@ -255,10 +255,8 @@ export function VillagerState(props) {
 
   //Search for villagers in Home Search (Home Page)
   const searchByHomeInput = text => {
-    setLoading();
     let lowerCase = text.toLowerCase();
     if (lowerCase.match(regexSymb)) {
-      console.error(`Regex didn't match`);
     } else {
       dispatch({ type: SEARCH_BY_HOME_INPUT, payload: lowerCase });
     }
@@ -267,10 +265,8 @@ export function VillagerState(props) {
   //Filter by name on Villagers page
 
   const filterByName = text => {
-    setLoading();
     let lowerCase = text.toLowerCase();
     if (lowerCase.match(regexSymb)) {
-      console.error(`Regex didn't match`);
     } else {
       dispatch({ type: FILTER_VILLAGERS, payload: lowerCase });
     }
@@ -278,10 +274,8 @@ export function VillagerState(props) {
 
   //Filter by name on Items page
   const filterByItemName = text => {
-    setLoading();
     let lowerCase = text.toLowerCase();
     if (lowerCase.match(regexSymb)) {
-      console.error(`Regex didn't match`);
     } else {
       dispatch({ type: FILTER_ITEMS, payload: lowerCase });
     }
@@ -290,7 +284,6 @@ export function VillagerState(props) {
   //Filter by name on Diy page
 
   const filterByDiyName = text => {
-    setLoading();
     let lowerCase = text.toLowerCase();
     if (lowerCase.match(regexSymb)) {
       console.error(`Regex didn't match`);
