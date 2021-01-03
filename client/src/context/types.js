@@ -1,0 +1,33 @@
+export const GET_VILLAGERS = 'GET_VILLAGERS';
+export const CLEAR_STATE = 'CLEAR_STATE';
+export const SEARCH_BY_HOME_INPUT = 'SEARCH_BY_HOME_INPUT';
+export const FILTER_VILLAGERS = 'FILTER_VILLAGERS';
+export const CLEAR_FILTER = 'CLEAR_FILTER';
+export const CALC_PAGES = 'CALC_PAGES';
+export const CALC_PAGES_HOME_INPUT = 'CALC_PAGES_HOME_INPUT';
+export const GET_DATA = 'GET_DATA';
+export const GET_DATA_BY_ID = 'GET_DATA_BY_ID';
+export const GET_ITEMS = 'GET_ITEMS';
+export const CALC_FILTERED_PAGES = 'CALC_FILTERED_PAGES';
+export const FILTER_ITEMS = 'FILTER_ITEMS';
+export const FILTER_DIY = 'FILTER_DIY';
+export const CLEAR_ITEMS_FILTER = 'CLEAR_ITEMS_FILTER';
+export const GET_CLOTHES = 'GET_CLOTHES';
+export const CLEAR_CLOTHES_FILTER = 'CLEAR_CLOTHES_FILTER';
+export const GET_DIY = 'GET_DIY';
+export const CLEAR_DIY_FILTER = 'CLEAR_DIY_FILTER';
+export const GET_IMG_BY_NAME = 'GET_IMG_BY_NAME';
+export const GET_MAT_IMG_BY_NAME = 'GET_MAT_IMG_BY_NAME';
+export const GET_VILLAGER_ITEMS = 'GET_VILLAGER_ITEMS';
+export const GET_SOURCE = 'GET_SOURCE';
+export const SET_LOADING = 'SET_LOADING';
+
+//LOGIN / LOGOUT / AUTH RELATED
+// export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+// export const REGISTER_FAIL = 'REGISTER_FAIL';
+// export const USER_LOADED = 'USER_LOADED';
+// export const AUTH_ERROR = 'AUTH_ERROR';
+// export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+// export const LOGIN_FAIL = 'LOGIN_FAIL';
+// export const LOGOUT = 'LOGOUT';
+// export const CLEAR_ERRORS = 'CLEAR_ERRORS';
