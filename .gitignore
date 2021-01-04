@@ -1,6 +1,6 @@
 node_modules
 .history
-config/default.json
+
 package-lock.json
 .env.local
 
@@ -14,6 +14,7 @@ package-lock.json
 /middleware
 /models
 /routes
+/config 
 
 npm-debug.log*
 yarn-debug.log*
